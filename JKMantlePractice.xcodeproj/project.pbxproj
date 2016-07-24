@@ -22,6 +22,11 @@
 		38077BA61D4576B300117AA2 /* JKAirlineScore.m in Sources */ = {isa = PBXBuildFile; fileRef = 38077B9E1D4576B300117AA2 /* JKAirlineScore.m */; };
 		38077BA71D4576B300117AA2 /* JKAirportDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 38077BA01D4576B300117AA2 /* JKAirportDetails.m */; };
 		38077BA81D4576B300117AA2 /* JKCompany.m in Sources */ = {isa = PBXBuildFile; fileRef = 38077BA21D4576B300117AA2 /* JKCompany.m */; };
+		38077BAF1D457C5900117AA2 /* JKHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 38077BAE1D457C5900117AA2 /* JKHuman.m */; };
+		38077BB21D457C7A00117AA2 /* JKFinanceHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 38077BB11D457C7A00117AA2 /* JKFinanceHuman.m */; };
+		38077BB51D457C8500117AA2 /* JKTechnologyHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = 38077BB41D457C8500117AA2 /* JKTechnologyHuman.m */; };
+		38077BB71D457D1A00117AA2 /* finance_human.json in Resources */ = {isa = PBXBuildFile; fileRef = 38077BB61D457D1A00117AA2 /* finance_human.json */; };
+		38077BB91D457D3A00117AA2 /* technology_human.json in Resources */ = {isa = PBXBuildFile; fileRef = 38077BB81D457D3A00117AA2 /* technology_human.json */; };
 		53D7C957F81188C024A465EB /* libPods-JKMantlePractice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD50EE8C0F39F79791209742 /* libPods-JKMantlePractice.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +68,14 @@
 		38077BA01D4576B300117AA2 /* JKAirportDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAirportDetails.m; sourceTree = "<group>"; };
 		38077BA11D4576B300117AA2 /* JKCompany.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKCompany.h; sourceTree = "<group>"; };
 		38077BA21D4576B300117AA2 /* JKCompany.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKCompany.m; sourceTree = "<group>"; };
+		38077BAD1D457C5900117AA2 /* JKHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKHuman.h; sourceTree = "<group>"; };
+		38077BAE1D457C5900117AA2 /* JKHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKHuman.m; sourceTree = "<group>"; };
+		38077BB01D457C7A00117AA2 /* JKFinanceHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFinanceHuman.h; sourceTree = "<group>"; };
+		38077BB11D457C7A00117AA2 /* JKFinanceHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFinanceHuman.m; sourceTree = "<group>"; };
+		38077BB31D457C8500117AA2 /* JKTechnologyHuman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKTechnologyHuman.h; sourceTree = "<group>"; };
+		38077BB41D457C8500117AA2 /* JKTechnologyHuman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTechnologyHuman.m; sourceTree = "<group>"; };
+		38077BB61D457D1A00117AA2 /* finance_human.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = finance_human.json; sourceTree = "<group>"; };
+		38077BB81D457D3A00117AA2 /* technology_human.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = technology_human.json; sourceTree = "<group>"; };
 		B8CDAA8725010436E2C3CF3B /* Pods-JKMantlePractice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKMantlePractice.release.xcconfig"; path = "Pods/Target Support Files/Pods-JKMantlePractice/Pods-JKMantlePractice.release.xcconfig"; sourceTree = "<group>"; };
 		F102888B9244637B80CF18E6 /* Pods-JKMantlePractice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKMantlePractice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JKMantlePractice/Pods-JKMantlePractice.debug.xcconfig"; sourceTree = "<group>"; };
 		FD50EE8C0F39F79791209742 /* libPods-JKMantlePractice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JKMantlePractice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +168,8 @@
 			children = (
 				38077B901D45768000117AA2 /* airlineInfo.json */,
 				38077B911D45768000117AA2 /* companies.json */,
+				38077BB61D457D1A00117AA2 /* finance_human.json */,
+				38077BB81D457D3A00117AA2 /* technology_human.json */,
 			);
 			name = JSONs;
 			sourceTree = "<group>";
@@ -162,6 +177,7 @@
 		38077BA91D4576B600117AA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				38077BAC1D457BB500117AA2 /* Subclass SuperClass Relationships */,
 				38077BAB1D45777600117AA2 /* Company Model */,
 				38077BAA1D45776A00117AA2 /* Airline Models */,
 			);
@@ -192,6 +208,19 @@
 				38077BA21D4576B300117AA2 /* JKCompany.m */,
 			);
 			name = "Company Model";
+			sourceTree = "<group>";
+		};
+		38077BAC1D457BB500117AA2 /* Subclass SuperClass Relationships */ = {
+			isa = PBXGroup;
+			children = (
+				38077BAD1D457C5900117AA2 /* JKHuman.h */,
+				38077BAE1D457C5900117AA2 /* JKHuman.m */,
+				38077BB01D457C7A00117AA2 /* JKFinanceHuman.h */,
+				38077BB11D457C7A00117AA2 /* JKFinanceHuman.m */,
+				38077BB31D457C8500117AA2 /* JKTechnologyHuman.h */,
+				38077BB41D457C8500117AA2 /* JKTechnologyHuman.m */,
+			);
+			name = "Subclass SuperClass Relationships";
 			sourceTree = "<group>";
 		};
 		4B61698E9BD30FB3DAC4A2AD /* Pods */ = {
@@ -286,8 +315,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38077BB91D457D3A00117AA2 /* technology_human.json in Resources */,
 				38077B921D45768000117AA2 /* airlineInfo.json in Resources */,
 				38077B7B1D45766500117AA2 /* LaunchScreen.storyboard in Resources */,
+				38077BB71D457D1A00117AA2 /* finance_human.json in Resources */,
 				38077B931D45768000117AA2 /* companies.json in Resources */,
 				38077B781D45766500117AA2 /* Assets.xcassets in Resources */,
 				38077B761D45766500117AA2 /* Main.storyboard in Resources */,
@@ -358,11 +389,14 @@
 			files = (
 				38077B731D45766500117AA2 /* ViewController.m in Sources */,
 				38077BA81D4576B300117AA2 /* JKCompany.m in Sources */,
+				38077BAF1D457C5900117AA2 /* JKHuman.m in Sources */,
 				38077BA71D4576B300117AA2 /* JKAirportDetails.m in Sources */,
 				38077B701D45766500117AA2 /* AppDelegate.m in Sources */,
 				38077BA61D4576B300117AA2 /* JKAirlineScore.m in Sources */,
 				38077BA51D4576B300117AA2 /* JKAirlineDelayIndex.m in Sources */,
 				38077BA41D4576B300117AA2 /* JKAirlineRootObject.m in Sources */,
+				38077BB51D457C8500117AA2 /* JKTechnologyHuman.m in Sources */,
+				38077BB21D457C7A00117AA2 /* JKFinanceHuman.m in Sources */,
 				38077BA31D4576B300117AA2 /* JKAirportCode.m in Sources */,
 				38077B6D1D45766500117AA2 /* main.m in Sources */,
 			);

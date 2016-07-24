@@ -8,6 +8,9 @@
 
 #import "JKAirlineRootObject.h"
 #import "JKCompany.h"
+#import "JKHuman.h"
+#import "JKTechnologyHuman.h"
+#import "JKFinanceHuman.h"
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
@@ -30,6 +33,15 @@
     NSArray<JKCompany*>* companiesCollection = [MTLJSONAdapter modelsOfClass:JKCompany.class fromJSONArray:companyInfoFromJSON error:&companyInfoParseError];
     
     NSArray* originalCompaniesInfoDictionary = [MTLJSONAdapter JSONArrayFromModels:companiesCollection error:&companyInfoParseError];
+    
+    NSError* humanError;
+    NSDictionary* financeHumanJSON = [self jsonDataFromFileWithName:@"finance_human"];
+    JKFinanceHuman* financeHuman = [MTLJSONAdapter modelOfClass:JKHuman.class fromJSONDictionary:financeHumanJSON error:&humanError];
+    financeHumanJSON = [MTLJSONAdapter JSONDictionaryFromModel:financeHuman error:nil];
+    
+    NSDictionary* technologyHumanJSON = [self jsonDataFromFileWithName:@"technology_human"];
+    JKFinanceHuman* technologyHuman = [MTLJSONAdapter modelOfClass:JKHuman.class fromJSONDictionary:technologyHumanJSON error:&humanError];
+    technologyHumanJSON = [MTLJSONAdapter JSONDictionaryFromModel:technologyHuman error:nil];
     
     return YES;
 }
