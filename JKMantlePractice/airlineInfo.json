@@ -1,0 +1,22 @@
+{
+    "request": {
+        "airportCodes": [{
+                         "requestedCode": "DFW",
+                         "fsCode": "DFW"
+                         }],
+        "url": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/DFW",
+        "classification": {"name": "class1", "id": 100},
+        "score": {"maxScore": 100, "minScore": 10}
+    },
+    "delayIndexes": [{
+                     "airport": {
+                     "countryName": "United States",
+                     "localTime": "2016-07-22T23:14:35.550Z",
+                     "longitude": -97.036128,
+                     "active": true,
+                     },
+                     "rawScore": 27.66,
+                     "dateStart": "2016-07-23T03:00:00.009Z",
+                     "delayed45": 7
+                     }]
+}

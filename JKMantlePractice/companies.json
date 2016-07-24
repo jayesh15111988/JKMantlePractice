@@ -1,0 +1,22 @@
+[
+ {"name": "XYZ",
+ "turnover": 100000,
+ "location": "sdsdf",
+ "taxRate": 10.45,
+ "myName": "Jayesh",
+ "relationship_status": "single",
+ "boolTest": true,
+ "boolTest1": 1
+ 
+ },
+ {
+ "name": "ABC",
+ "turnover": 100000000,
+ "location": "dsdfsd",
+ "taxRate": 15.45,
+ "myName": "Chitali",
+ "relationship_status": "committed",
+ "boolTest": false,
+ "boolTest1": 0
+}
+]
